@@ -5,3 +5,6 @@
 
 ## Service
 [tools](https://tools.tuna2134.jp)
+
+## Library
+[voicevox-client](https://github.com/voicevox-client)
