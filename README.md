@@ -5,6 +5,7 @@
 
 ## Service
 [tools](https://tools.tuna2134.jp)
+[GlobalChat](https://tuna2134.dev/global-chat/)
 
 ## Library
 [voicevox-client](https://github.com/voicevox-client)
