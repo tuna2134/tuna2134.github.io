@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>fizzbuzz game</title>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <main id="root"></main>
+        <script type="text/babel">
+            function App() {
+                const [results, setResults] = React.useState([]);
+                function handleSubmit(event) {
+                    event.preventDefault();
+                    let num_str = event.target[0].value;
+                    let num = new Number(num_str);
+                    if ((num % 15) === 0) {
+                        setResults([...results, "FizzBuzz"])
+                    } else if ((num % 5) === 0) {
+                        setResults([...results, "Buzz"])
+                    } else if ((num % 3) === 0) {
+                        setResults([...results, "Fizz"])
+                    } else {
+                        setResults([...results, num_str])
+                    };
+                }
+                return (
+                    <div>
+                        <form onSubmit={handleSubmit}>
+                            <input type="text" />
+                            <button>Play!</button>
+                        </form>
+                        <ul>
+                            {results.map((r, i) => {
+                                return <li key={i}>{r}</li>
+                            })}
+                        </ul>
+                    </div>
+                )
+            }
+
+            let dom = document.querySelector("#root");
+            let root = ReactDOM.createRoot(dom);
+            root.render(<App />);
+        </script>
+    </body>
+</html>
