@@ -9,3 +9,6 @@
 
 ## Library
 [voicevox-client](https://github.com/voicevox-client)
+
+## Game
+[FizzBuzz](/fizzbuzz.html)
