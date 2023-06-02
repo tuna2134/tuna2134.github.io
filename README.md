@@ -12,3 +12,6 @@
 
 ## Game
 [FizzBuzz](/fizzbuzz.html)
+
+## Discord server
+[mc-fdc-dev](https://discord.gg/4R83HQZGcV)
