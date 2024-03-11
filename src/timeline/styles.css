@@ -1,0 +1,41 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.timeline-item:first-child::before {
+  top: -20px;
+}
+
+.timeline-item:last-child::before {
+  bottom: -20px;
+}
+
+.date {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 16px;
+}
